@@ -14,14 +14,24 @@ void MainWindow::createWidgets()
 	QWidget *container = new QWidget(this);
 	setCentralWidget(container);
 
-	setupLayout = new QHBoxLayout(container);
+	setupHLayout = new QHBoxLayout(container);
+	setupVLayout = new QVBoxLayout();
 
 	// Menu Bar
 	menuBar = new MenuBar(this);
-	setupLayout->addWidget(menuBar);
+	setupHLayout->addWidget(menuBar);
 
 	// Main Widget
+	QWidget *rightWidget = new QWidget(this);
+	setupVLayout = new QVBoxLayout(rightWidget);
+
+	// Main Widget Component Stacked
 	mainWidget = new MainWidgets(this);
-	setupLayout->addWidget(mainWidget);
+	setupVLayout->addWidget(mainWidget);
+	
+	setupHLayout->addWidget(rightWidget);
+
+	//mainWidget = new MainWidgets(this);
+	//setupLayout->addWidget(mainWidget);
 
 }

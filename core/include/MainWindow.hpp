@@ -5,6 +5,7 @@
 // Required for inheritance
 #include <QMainWindow>
 #include <QHBoxLayout>
+#include <QVBoxLayout>
 
 class MenuBar;
 class MainWidgets;
@@ -23,7 +24,8 @@ private:
 	MenuBar *menuBar;
 	MainWidgets *mainWidget;
 
-	QHBoxLayout *setupLayout;
+	QHBoxLayout *setupHLayout;
+	QVBoxLayout *setupVLayout;
 };
 
 #endif

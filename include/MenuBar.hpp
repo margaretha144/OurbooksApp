@@ -4,6 +4,7 @@
 // Qt
 // Required for inheritance
 #include <QWidget>
+#include <QPushButton>
 
 /**
  * @brief Class, that describes left panel
@@ -22,6 +23,17 @@ public:
 	// Disable copying
 	MenuBar(const MenuBar&) = delete;
 	MenuBar& operator=(const MenuBar&) = delete;
+
+private:
+	void initMenu();
+	void setupMenu();
+
+	QPushButton *bookButton;
+	QPushButton *homeButton;
+	QPushButton *exploreButton;
+	QPushButton *optionsButton;
+	QPushButton *aboutButton;
+	QPushButton *expandButton;
 };
 
 #endif

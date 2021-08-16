@@ -16,11 +16,21 @@ endif()
 set(INCLUDE_FILES
 	include/MenuBar.hpp
 	include/MainWidgets.hpp
+	include/BookWidget.hpp
+	include/HomeWidget.hpp
+	include/ExploreWidget.hpp
+	include/OptionsWidget.hpp
+	include/AboutWidget.hpp
 )
 
 set(SOURCE_FILES
 	src/MenuBar.cpp
 	src/MainWidgets.cpp
+	src/BookWidget.cpp
+	src/HomeWidget.cpp
+	src/ExploreWidget.cpp
+	src/OptionsWidget.cpp
+	src/AboutWidget.cpp
 )
 
 set(CMAKE_AUTOMOC ON)

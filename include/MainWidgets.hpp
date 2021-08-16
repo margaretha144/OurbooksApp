@@ -3,12 +3,18 @@
 
 // Qt
 // Required for inheritance
-#include <QWidget>
+#include <QStackedWidget>
+
+class BookWidget;
+class HomeWidget;
+class ExploreWidget;
+class OptionsWidget;
+class AboutWidget;
 
 /**
  * @brief Class, that describes code main stacked widget
  */
-class MainWidgets : public QWidget
+class MainWidgets : public QStackedWidget
 {
 	Q_OBJECT
 
@@ -23,6 +29,15 @@ public:
 	MainWidgets(const MainWidgets&) = delete;
 	MainWidgets& operator=(const MainWidgets&) = delete;
 
+private:
+	BookWidget *bookWidget;
+	HomeWidget *homeWidget;
+	ExploreWidget *exploreWidget;
+	OptionsWidget *optionsWidget;
+	AboutWidget *aboutWidget;
+
+	void initWidget();
+	void setupWidget();
 };
 
 #endif
