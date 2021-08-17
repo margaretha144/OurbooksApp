@@ -1,6 +1,7 @@
 #include "AboutWidget.hpp"
+#include "MainWidgets.hpp"
 
-AboutWidget::AboutWidget(QStackedWidget *parent) : QWidget(parent)
+AboutWidget::AboutWidget(MainWidgets *parent) : QWidget(parent)
 {
-    
+ 
 }

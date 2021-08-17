@@ -1,6 +1,7 @@
 #include "BookWidget.hpp"
+#include "MainWidgets.hpp"
 
-BookWidget::BookWidget(QStackedWidget *parent) : QWidget(parent)
+BookWidget::BookWidget(MainWidgets *parent) : QWidget(parent)
 {
     
 }

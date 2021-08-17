@@ -3,17 +3,22 @@
 
 // Qt
 // Required for inheritance
-#include <QStackedWidget>
+#include <QWidget>
+
+class MainWidgets;
 
 class AboutWidget : public QWidget
 {
 	Q_OBJECT
 
 public:
-	explicit AboutWidget(QStackedWidget *widget=nullptr);
+	explicit AboutWidget(MainWidgets *parent=nullptr);
 
 	AboutWidget(const AboutWidget&) = delete;
 	AboutWidget& operator=(const AboutWidget&) = delete;
+
+private:
+
 };
 
 #endif

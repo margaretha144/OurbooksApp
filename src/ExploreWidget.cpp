@@ -1,6 +1,7 @@
 #include "ExploreWidget.hpp"
+#include "MainWidgets.hpp"
 
-ExploreWidget::ExploreWidget(QStackedWidget *parent) : QWidget(parent)
+ExploreWidget::ExploreWidget(MainWidgets *parent) : QWidget(parent)
 {
     
 }

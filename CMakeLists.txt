@@ -54,7 +54,8 @@ if(CMAKE_COMPILER_IS_GNUCXX)
 	target_compile_options(Ourbooks PRIVATE
 		-ansi -pedantic
 		-Wall -Wextra
-		-Weffc++ -Woverloaded-virtual
+		# -Weffc++
+		-Woverloaded-virtual
 		-Winit-self
 		-Wunreachable-code
 	)

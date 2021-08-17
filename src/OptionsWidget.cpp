@@ -1,6 +1,7 @@
 #include "OptionsWidget.hpp"
+#include "MainWidgets.hpp"
 
-OptionsWidget::OptionsWidget(QStackedWidget *parent) : QWidget(parent)
+OptionsWidget::OptionsWidget(MainWidgets *parent) : QWidget(parent)
 {
     
 }
